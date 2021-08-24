@@ -7,6 +7,7 @@ Assuntos da aula 1:
 - Discussão sobre licanças de software
 - Diferenças entre kernel
 - Sistemas operacionais
+- Linguagens: C, C++ e Python
 
 ## Aula 2
 
