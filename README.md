@@ -68,7 +68,7 @@ Criar um titulo para sua chave (ex: computador casa, ubuntu, etc) e em seguida c
 
 Agora seu computador e o site do GitHub podem se comunicar sem a necessidade de senhas cada vez que quiser sincronizar o seu repositorio local com o online.
 
-DICA: Caso pretenda fazer o upload de alterações no repositorio local para o GitHub (será o caso desta diciplina) você deve clonar o repositorio utilizando o link referente a aba SSH. [Imagem exemplo]() 
+DICA: Caso pretenda fazer o upload de alterações no repositorio local para o GitHub (será o caso desta diciplina) você deve clonar o repositorio utilizando o link referente a aba SSH. [Imagem exemplo](https://github.com/vitorstraggiotti/sel0456/blob/main/img/aba_SSH.png) 
 
 
 
