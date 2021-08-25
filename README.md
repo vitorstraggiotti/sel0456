@@ -57,6 +57,7 @@ Comando: `cat ~/.ssh/GitHub.pub`
  * Este comando `cat` imprime na tela o conteudo do arquivo `~/.ssh/GitHub.pub` que foi passado como argumento
 
 Selecionamos a chave publica com o mouse, clicamos com o botão direito do mouse em cima do texto selecionado e depois clicamos em "copiar"
+
 [copy public key](vitorstraggiotti.github.com/sel0456/img/terminal_copy_pub.png)
 
 
