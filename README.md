@@ -56,11 +56,14 @@ Comando: `cat ~/.ssh/GitHub.pub`
 
  * Este comando `cat` imprime na tela o conteudo do arquivo `~/.ssh/GitHub.pub` que foi passado como argumento
 
-Selecionamos a chave publica com o mouse, clicamos com o botão direito do mouse em cima do texto selecionado e depois clicamos em "copiar"
+Selecionamos a chave publica com o mouse, clicamos com o botão direito do mouse em cima do texto selecionado e depois clicamos em "copiar". [Imagem de exemplo.](https://github.com/vitorstraggiotti/sel0456/blob/main/img/terminal_copy_pub.png)
 
-[copy public key](https://github.com/vitorstraggiotti/sel0456/blob/main/img/terminal_copy_pub.png)
+Com a chave publica copiada vamos ao GitHub e seguimos o seginte caminho: 
+[Settings -->](https://docs.github.com/assets/images/help/settings/userbar-account-settings.png)
+[SSH and GPG keys -->](https://docs.github.com/assets/images/help/settings/settings-sidebar-ssh-keys.png)
+[New SSH key](https://docs.github.com/assets/images/help/settings/ssh-add-ssh-key.png)
 
-
+Criar um titulo para sua chave (ex: computador casa, ubuntu, etc) e em seguida colar a chave no campo "key" e clicar em "add SSH key". [Imagem exemplo](https://docs.github.com/assets/images/help/settings/ssh-key-paste.png)
 
 
 
