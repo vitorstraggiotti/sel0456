@@ -58,7 +58,7 @@ Comando: `cat ~/.ssh/GitHub.pub`
 
 Selecionamos a chave publica com o mouse, clicamos com o botão direito do mouse em cima do texto selecionado e depois clicamos em "copiar"
 
-[copy public key](vitorstraggiotti.github.com/sel0456/img/terminal_copy_pub.png)
+[copy public key](https://github.com/vitorstraggiotti/sel0456/blob/main/img/terminal_copy_pub.png)
 
 
 
