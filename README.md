@@ -14,3 +14,4 @@
 - Instalação Linux: os alunos precisam instalar Linux, pelo menos, em uma máquina virtual para acompanhar o curso
 - Os alunos precisam abrir uma conta no GitHub
 - Exemplo de arquivo markdown
+- Commit para o github
