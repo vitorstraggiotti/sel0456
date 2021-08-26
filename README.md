@@ -4,19 +4,24 @@
 
 ### Assuntos da aula 01:
 
- * Discussão sobre licenças de software
- * Diferenças entre kernel e sistemas operacionais
- * Definindo kernel
- * Sistemas operacionais
- * Linguagens: C, C++ e Python
+- Discussão sobre licenças de software
+- Diferenças entre kernel e sistemas operacionais
+- Sistemas operacionais
+- Kernel - funções:
+    1. gerenciamento de tarefas
+    2. comunicação entre processos
+    3. gerenciamento de memória
 
 ## Aula 2
 
-### Assuntos da sula 02:
+### Assuntos da aula 02:
 
- * Instalação Linux: os alunos precisam instalar Linux, pelo menos em uma máquina virtual para poder acompanhar o curso.
- * Os alunos precisam abrir uma conta no Github
- * Exemplo de arquivo markdown
+- Instalação Linux: os alunos precisam instalar Linux, pelo menos em uma máquina virtual para poder acompanhar o curso.
+- Os alunos precisam abrir uma conta no Github
+- Exemplo de arquivo markdown
+- Criação da chave ssh
+- Commit para o github
+- Utilizaremos as linguagens: C, C++ e Python
  
 ### Configurando chaves para GitHub (Ubuntu)
 
@@ -69,6 +74,3 @@ Criar um titulo para sua chave (ex: computador casa, ubuntu, etc) e em seguida c
 Agora seu computador e o site do GitHub podem se comunicar sem a necessidade de senhas cada vez que quiser sincronizar o seu repositorio local com o online.
 
 DICA: Caso pretenda fazer o upload de alterações no repositorio local para o GitHub (será o caso desta diciplina) você deve clonar o repositorio utilizando o link referente a aba SSH. [Imagem exemplo](https://github.com/vitorstraggiotti/sel0456/blob/main/img/aba_SSH.png) 
-
-
-
