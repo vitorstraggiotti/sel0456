@@ -2,7 +2,7 @@
 
 ## Aula 1
 
-### Assuntos da aula 01:
+### Assuntos da aula:
 
 - Discussão sobre licenças de software
 - Diferenças entre kernel e sistemas operacionais
@@ -14,7 +14,7 @@
 
 ## Aula 2
 
-### Assuntos da aula 02:
+### Assuntos da aula:
 
 - Instalação Linux: os alunos precisam instalar Linux, pelo menos em uma máquina virtual para poder acompanhar o curso.
 - Os alunos precisam abrir uma conta no Github
@@ -23,3 +23,13 @@
 - Commit para o github
 - Utilizaremos as linguagens: C, C++ e Python
 
+## Aula 3
+
+### Assuntos da aula:
+
+- Estrutura de programas em C
+	1. Arquivos de código fonte (.c)
+	2. Arquivos objeto (.o)
+	3. Arquivos de cabeçalho (.h)
+- Compilador GCC e suas flags
+- Makefiles
