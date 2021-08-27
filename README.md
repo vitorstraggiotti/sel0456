@@ -18,7 +18,7 @@
 
 - Instalação Linux: os alunos precisam instalar Linux, pelo menos em uma máquina virtual para poder acompanhar o curso.
 - Os alunos precisam abrir uma conta no Github
-- Exemplo de arquivo markdown
+- Exemplo de arquivo [markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 - Criação da chave ssh
 - Commit para o github
 - Utilizaremos as linguagens: C, C++ e Python
