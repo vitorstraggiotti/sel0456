@@ -1,7 +1,7 @@
 DEFFLAGS = $(patsubst %, -D%, OPTION1 OPTION2 OPTION3)
 
 CFLAGS = -O2 -g $(DEFFLAGS)
-LDFLAGS = -lm
+LDFLAGS = -lm -lpthread
 GCC = gcc
 
 ALL = main
@@ -9,7 +9,7 @@ ALL = main
 all: $(ALL)
 
 main: main.o sqr.o mult_acc.o
-	$(GCC) -o $@ $(LDFLAGS) $^
+	$(GCC) -o $@  $^ $(LDFLAGS) 
 
 %.s: %.c
 	$(GCC) $(CFLAGS) -S $<
