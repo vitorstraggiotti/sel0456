@@ -2,7 +2,7 @@
 
 ## Aula 1
 
-### Assuntos da aula 01:
+### Assuntos da aula:
 
 - Discussão sobre licenças de software
 - Diferenças entre kernel e sistemas operacionais
@@ -14,27 +14,29 @@
 
 ## Aula 2
 
-### Assuntos da aula 02:
+### Assuntos da aula:
 
 - Instalação Linux: os alunos precisam instalar Linux, pelo menos em uma máquina virtual para poder acompanhar o curso.
 - Os alunos precisam abrir uma conta no Github
-- Exemplo de arquivo markdown
-- Criação da chave ssh
+- Exemplo de arquivo [markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [Criação da chave ssh para GitHub](./texto/tutorial_chaves_github.md)
 - Commit para o github
 - Utilizaremos as linguagens: C, C++ e Python
- 
-### Configurando chaves para GitHub (Ubuntu)
 
-A seguir veremos como podemos adicionar chaves ao GitHub com o objetivo de podermos
-sicronizar nosso repositorio local com o repositório online.
+## Aula 3
 
-1) Gerar novo par de chaves assimetricas
- 
-Comando: `ssh-keygen -t ed25519 -C "seu_email_git@exemplo.com"`
+### Assuntos da aula:
 
- * `-t ed25519` --> Especifica o tipo de algoritimo criptográfico utilizado na geração das chaves
- * `-C "seu_email_git@exemplo.com"` --> Especifica o e-mail associado ao par de chaves. Substituir este exemplo pelo seu e-mail no GitHub
- 
+- Estrutura de programas em C
+	1. Arquivos de código fonte (.c)
+	2. Arquivos objeto (.o)
+	3. Arquivos de cabeçalho (.h)
+- Compilador GCC e suas flags
+- Makefile:
+    Para criação e utilização do makefile no VS Code é necessário instalar uma extensão chamada Makefile Tools.
+    Para instalar abra o Quick Open (Ctrl + P) e cole o seguinte comando:
+    ext install ms-vscode.makefile-tools
+
 Ao executar o comando de geração de chaves acima mencionado serão solicitadas duas informações, sendo ambas de preenchimento opcional: 
 
 Informar o Local de salvamento e nome das chaves: `~/.ssh/GitHub`
@@ -74,3 +76,4 @@ Criar um titulo para sua chave (ex: computador casa, ubuntu, etc) e em seguida c
 Agora seu computador e o site do GitHub podem se comunicar sem a necessidade de senhas cada vez que quiser sincronizar o seu repositorio local com o online.
 
 DICA: Caso pretenda fazer o upload de alterações no repositorio local para o GitHub (será o caso desta diciplina) você deve clonar o repositorio utilizando o link referente a aba SSH. [Imagem exemplo](https://github.com/vitorstraggiotti/sel0456/blob/main/img/aba_SSH.png) 
+
