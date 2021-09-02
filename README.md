@@ -35,7 +35,7 @@
 - Makefile:
     Para criação e utilização do makefile no VS Code é necessário instalar uma extensão chamada Makefile Tools.
     Para instalar abra o Quick Open (Ctrl + P) e cole o seguinte comando:
-    ext install ms-vscode.makefile-tools
+    `ext install ms-vscode.makefile-tools`
 
 ## Aula 4
 
