@@ -37,4 +37,14 @@
     Para instalar abra o Quick Open (Ctrl + P) e cole o seguinte comando:
     ext install ms-vscode.makefile-tools
 
+## Aula 4
 
+### Assuntos da aula:
+
+- Aplicação do qualificador `static`, `volatile`
+- Criação de arquivo `.gitignore`
+- Realizando 'merge' no repositorio do GitHub
+- Utilizando threads
+ * `pthread_create()`
+ * `pthread_join()`
+ * `pthread_exit()`
