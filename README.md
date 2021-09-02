@@ -45,6 +45,6 @@
 - Criação de arquivo `.gitignore`
 - Realizando 'merge' no repositorio do GitHub
 - Utilizando threads
- * `pthread_create()`
- * `pthread_join()`
- * `pthread_exit()`
+	1. `pthread_create()`
+	2. `pthread_join()`
+	3. `pthread_exit()`
