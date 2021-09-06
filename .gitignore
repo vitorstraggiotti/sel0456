@@ -1,2 +1,3 @@
 *.o
 /make/main
+/process/proc2
