@@ -48,3 +48,11 @@
 	1. `pthread_create()`
 	2. `pthread_join()`
 	3. `pthread_exit()`
+
+## Aula 5 (02/09)
+
+### Assuntos da aula:
+
+- Processos: criando processos com `fork` e `exec`
+- Usando `man <fcn>` para obter documentação sobre função `<fcn>`
+
