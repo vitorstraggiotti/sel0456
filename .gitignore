@@ -1,3 +1,9 @@
 *.o
 /make/main
 /process/proc2
+/argp/CMakeFiles/
+/argp/CMakeCache.txt
+/argp/cmake_install.cmake
+/argp/Makefile
+/argp/example
+/cmake/build/
