@@ -56,3 +56,12 @@
 - Processos: criando processos com `fork` e `exec`
 - Usando `man <fcn>` para obter documentação sobre função `<fcn>`
 
+# Aula 6 (09/09)
+
+Assuntos da aula:
+
+- cmake
+- argp
+- popen
+- pipe
+- malloc
