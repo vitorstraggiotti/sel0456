@@ -7,3 +7,7 @@
 /argp/Makefile
 /argp/example
 /cmake/build/
+/pipe/build/
+/popen/gnuplot
+/popen/popen
+/popen/popen-read

@@ -60,3 +60,12 @@
 	2. `sem_wait()`
 	3. `sem_post()`
 
+# Aula 6 (09/09)
+
+Assuntos da aula:
+
+- cmake
+- argp
+- popen
+- pipe
+- malloc
