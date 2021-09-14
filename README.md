@@ -65,3 +65,30 @@ Assuntos da aula:
 - popen
 - pipe
 - malloc
+
+# Aula 7
+
+Assuntos da aula 7:
+
+- gdb
+- lib electric-fence (-lefence)
+- aasert
+- esp32: esp-idf:
+
+```
+$ cd ~
+$ mkdir esp
+$ cd esp
+$ git clone -b v4.3 --recursive https://github.com/espressif/esp-idf.git
+$ cd esp-idf
+$ ./install.sh
+$ cd ~
+$ mkdir Code
+$ cd Code
+$ cp -a ~/esp/esp-idf/examples/peripherals/ledc
+$ cd ledc
+$ . ~/esp/esp-idf/export.sh
+$ idf.py menuconfig
+$ idf.py build
+$ idf.py -p /dev/ttyUSB0 flash monitor
+```
