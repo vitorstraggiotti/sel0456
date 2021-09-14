@@ -86,12 +86,26 @@ $ cd esp
 $ git clone -b v4.3 --recursive https://github.com/espressif/esp-idf.git
 $ cd esp-idf
 $ ./install.sh
+```
+O processo de instalação está finalizado nesse ponto.
+
+Pode-se copiar um exemplo, dos vários disponíveis e rodar:
+
+```
 $ cd ~
 $ mkdir Code
 $ cd Code
-$ cp -a ~/esp/esp-idf/examples/peripherals/ledc
+$ cp -a ~/esp/esp-idf/examples/peripherals/ledc .
 $ cd ledc
 $ . ~/esp/esp-idf/export.sh
+```
+
+Para editar o exemplo:
+```
+$ emacs main/ledc_example_main.c
+```
+
+```
 $ idf.py menuconfig
 $ idf.py build
 $ idf.py -p /dev/ttyUSB0 flash monitor
