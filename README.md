@@ -55,6 +55,10 @@
 
 - Processos: criando processos com `fork` e `exec`
 - Usando `man <fcn>` para obter documentação sobre função `<fcn>`
+- Uso de semaforo (semaphore.h)
+	1. `sem_init()`
+	2. `sem_wait()`
+	3. `sem_post()`
 
 # Aula 6 (09/09)
 
