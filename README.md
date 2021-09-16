@@ -111,3 +111,9 @@ $ idf.py menuconfig
 $ idf.py build
 $ idf.py -p /dev/ttyUSB0 flash monitor
 ```
+
+# Aula 8
+
+Assuntos da aula 8:
+- [Programação Orientada a Objetos](oop/README.md)
+- Exemplo de orientação a objetos em C com opacidade, encapsulamento e integridade. Métodos mínimos: construtor, destrutor, representação em stream e inicializador [range.c](oop/range.c), [range.h](oop/range.h) e [object1.c](oop/object1.c)
