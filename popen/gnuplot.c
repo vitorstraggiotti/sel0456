@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 void
 write_data (FILE * stream)
 {
-  fprintf (stream, "plot sin(x)\n");
+  fprintf(stream, "plot [0:2*pi] sin(x)\n");
   if (ferror (stream))
     {
       fprintf (stderr, "Output to stream failed.\n");

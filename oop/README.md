@@ -15,6 +15,7 @@
 ## Principais conceitos de Programação Orientada a Objetos:
 
 - Classes/Abstração
+- Encapsulamento
 - Protocolos/APIs
 - Herança
 - Polimorfismo

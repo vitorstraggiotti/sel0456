@@ -1,6 +1,6 @@
 DEFFLAGS = $(patsubst %, -D%, OPTION1 OPTION2 OPTION3)
 
-CFLAGS = -O2 -g $(DEFFLAGS)
+CFLAGS = -O2 -g $(DEFFLAGS) -Wall
 LDFLAGS = -lm -lpthread
 GCC = gcc
 
