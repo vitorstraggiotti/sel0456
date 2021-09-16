@@ -87,6 +87,7 @@ $ git clone -b v4.3 --recursive https://github.com/espressif/esp-idf.git
 $ cd esp-idf
 $ ./install.sh
 ```
+
 O processo de instalação está finalizado nesse ponto.
 
 Pode-se copiar um exemplo, dos vários disponíveis e rodar:
