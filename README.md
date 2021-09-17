@@ -61,6 +61,13 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
   > > Para se visualizar as opções de comandos pelo menu de teclas, pressione `M-m`, tanto no modo `Emacs` quanto no modo `vim`, ou a tecla `Espaço` no modo `vim`.
   
   Existem muitos guias e tutoriais para o `Emacs` disponíveis na rede. O site oficial é: https://www.gnu.org/savannah-checkouts/gnu/emacs/emacs.html.
+  
+  Em português: no [IME](https://www.ime.usp.br/~rbrito/texts/emacs.html), [EmacsWiki](https://www.emacswiki.org/emacs/NovatoNoEmacs) e [MIT](http://web.mit.edu/Emacs/source/emacs-23.1/etc/tutorials/TUTORIAL.pt_BR).
+  
+#### Editando programas em C
+
+Um modo que ajuda muito para programação em C, ou mesmo C++, é através do commando: `M-x semantic-mode` e o `M-x auto-complete-mode`.
+  
 ## Aula 3
 
 ### Assuntos da aula:
@@ -79,9 +86,9 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
 
 ### Assuntos da aula:
 
-- Aplicação do qualificador `static`, `volatile`
+- Aplicação dos qualificadores `static`, `volatile`, `register`
 - Criação de arquivo `.gitignore`
-- Realizando 'merge' no repositorio do GitHub
+- Realizando "merge" no repositorio do GitHub
 - Utilizando threads
 	1. `pthread_create()`
 	2. `pthread_join()`
