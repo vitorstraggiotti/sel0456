@@ -171,4 +171,4 @@ idf.py -p /dev/ttyUSB0 flash monitor
 ### Assuntos da aula
 
 - [Programação Orientada a Objetos](oop/README.md)
-- Exemplo de orientação a objetos em C com opacidade, encapsulamento e integridade. Métodos mínimos: construtor, destrutor, representação em stream e inicializador [range.c](oop/range.c), [range.h](oop/range.h) e [oop/main.c](oop/main.c)
+- Exemplo de orientação a objetos em C com opacidade, encapsulamento e integridade. Métodos mínimos: construtor, destrutor, representação em stream e inicializador [range.c](oop1/range.c), [range.h](oop1/range.h) e [oop1/main.c](oop1/main.c)
