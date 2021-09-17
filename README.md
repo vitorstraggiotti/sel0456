@@ -60,6 +60,7 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
   
   > > Para se visualizar as opções de comandos pelo menu de teclas, pressione `M-m`, tanto no modo `Emacs` quanto no modo `vim`, ou a tecla `Espaço` no modo `vim`.
   
+  Existem muitos guias e tutoriais para o `Emacs` disponíveis na rede. O site oficial é: https://www.gnu.org/savannah-checkouts/gnu/emacs/emacs.html.
 ## Aula 3
 
 ### Assuntos da aula:
