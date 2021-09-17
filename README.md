@@ -28,21 +28,21 @@
 
 Para instalar o Emacs no Ubuntu:
 
-```
+```bash
 sudo apt install emacs
 ```
 
 Infelizmente o Emacs não vem comn as opções habilitadas, e habilitá-las requer um esforço e um tempo muito grande. Felizmente, existem alguns utilitários para isso. Um bom exemplo disso é o [Spacemacs](https://www.spacemacs.org/).
 Para instalar o Spacemacs, você pode seguir os passos indicados na web page anterior ou:
   
-  ```
+  ```bash
   cd ~
   git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
   ```
   
   Aí é só executar o emacs normalmente: 
   
-  ```
+  ```bash
   emacs
   ```
   
@@ -102,7 +102,7 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
 
 ### Assuntos da aula:
 
-- cmake
+- [cmake](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
 - argp
 - popen
 - pipe
@@ -112,8 +112,13 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
 
 ### Assuntos da aula 7:
 
-- gdb: linha de comando e rodando com a IDE Emacs
+- gdb: rodando direto em linha de comando e rodando com a IDE Emacs
 - lib electric-fence (-lefence): melhor detecção falhas de segmentação de memória
+
+```bash
+ sudo apt install electric-fence
+```
+
 - assert: testar partes do programa na fase de depuração
 - esp32: esp-idf
 
@@ -121,7 +126,7 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
 
 Para instalar o IoT Development Framework da Espressif, siga os seguintes passos:
 
-```
+```bash
 cd ~
 mkdir esp
 cd esp
@@ -134,7 +139,7 @@ O processo de instalação está finalizado nesse ponto.
 
 Pode-se copiar um exemplo, dos vários disponíveis e rodar:
 
-```
+```bash
 cd ~
 mkdir Code
 cd Code
@@ -144,11 +149,11 @@ cd ledc
 ```
 
 Para editar o exemplo:
-```
+```bash
 emacs main/ledc_example_main.c
 ```
 
-```
+```bash
 idf.py menuconfig
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
