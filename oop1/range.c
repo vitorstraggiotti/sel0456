@@ -25,8 +25,9 @@ void range_init(range_t * _self, int min, int max) {
 
 /* método construtor */
 range_t * range_new(int min, int max) {
-  range_t * self = malloc(sizeof(_range_t));
+  range_t * self = (range_t *) malloc(sizeof(_range_t));
   range_init(self, min, max);
+  return self;
 }
 
 /* método destrutor */
