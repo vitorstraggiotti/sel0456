@@ -172,3 +172,18 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 - [Programação Orientada a Objetos](oop1/README.md)
 - Exemplo de orientação a objetos em C com opacidade, encapsulamento e integridade. Métodos mínimos: construtor, destrutor, representação em stream e inicializador [range.c](oop1/range.c), [range.h](oop1/range.h) e [oop1/main.c](oop1/main.c)
+
+## Aula 9
+
+### Assuntos da aula
+
+- Programação Orientada a Objetos, utilizando linguagem com suporte a OOP: `C++`
+- Exemplo do objeto `range_t` definido em `C` escrito agora em `C++`:
+  - sobrecarga de funções e operadores
+  - `protected`, `private` e `public`
+  - passagem de argumentos por referência &
+  - Construtores
+  - `cout` e `<<`
+  - chamada de código em `C` com `extern "C"`
+  - `namespace`
+  - `stdlibc++`: `std::`
