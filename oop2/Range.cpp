@@ -7,13 +7,6 @@ using namespace std;
 Range::Range(int min, int max) {
   Val = Min = min;
   Max = max;
-  Name = string {"Default"};
-}
-
-Range::Range(int min, int max, string name) {
-  Val = Min = min;
-  Max = max;
-  Name = name;
 }
 
 void Range::incVal(void) {
@@ -31,11 +24,11 @@ void Range::incVal(int step) {
 }
 
 void Range::repr(ostream &s) {
-  s << "Range object: " << Name << " [" << Min << ", " << Max << "[ = " << Val << endl;
+  s << "Range object: " <<  " [" << Min << ", " << Max << "[ = " << Val << endl;
 }
 
 void Range::repr(void) {
-  cout << "Range object: " << Name << " [" << Min << ", " << Max << "[ = " << Val << endl;
+  cout << "Range object: " << " [" << Min << ", " << Max << "[ = " << Val << endl;
 }
 
 void Range::setVal(int val) {
@@ -44,5 +37,19 @@ void Range::setVal(int val) {
     Val = Min;
   if (Val >= Max)
     Val = Max - 1;
+}
+
+int Range2::getVal(void) {
+  return Val;
+}
+
+void Range2::repr(ostream &s) {
+  s << "R2: \"" << Name << "\" ";
+  Range::repr(s);
+}
+
+void Range2::repr(void) {
+  cout << "R2: \"" << Name << "\" ";
+  Range::repr();
 }
 

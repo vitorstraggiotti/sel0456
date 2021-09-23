@@ -9,10 +9,11 @@ extern "C" {
 using namespace std;
 
 void f1(void) {
-  Range r2(0, 6, "R2 object");
+  Range2 r2(0, 6, "R2 object");
   r2.repr(cout);
   r2.incVal();
   r2.repr(cout);
+  cout << "Val of r2: " << r2.getVal() << endl;
 }
 
 int main(void) {

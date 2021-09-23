@@ -187,3 +187,19 @@ idf.py -p /dev/ttyUSB0 flash monitor
   - chamada de código em `C` com `extern "C"`
   - `namespace`
   - `stdlibc++`: `std::`
+
+## Aula 10
+
+### Assuntos da aula
+
+- Repassando alguns conceitos de OOP com `C++`:
+  - herança
+  - polimorfismo
+- Polimorfismo em Python
+- Manipulando arquivos de imagem:
+  - gparted
+  - cfdisk
+  - extended filesystem: ext2, ext3 e ext4
+  - ntfs
+  - vfat ou fat32
+  - partições primárias, partição extendida e partições lógicas
