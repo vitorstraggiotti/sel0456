@@ -203,3 +203,54 @@ idf.py -p /dev/ttyUSB0 flash monitor
   - ntfs
   - vfat ou fat32
   - partições primárias, partição extendida e partições lógicas
+
+## Aula 11
+
+### Assuntos da aula 11
+
+- arquivos de imagens e ferramentas para manipulação desses arquivos no HD local:
+  - `dd`: copia blocos de dados binários.
+  - `lsblk`: lista os dispositivos de armazenamento do sistema, útil para mostrar a qual *device*  um pen drive foi associado, por exemplo.
+  - `truncate`: altera o tamanho de um arquivo no HD, útil para criar um espaço vazio em uma imagem para expandir uma partição ou mesmo criar uma nova partição. Pode também diminuir o tamanho do arquivo, portanto use com atenção para não perder dados.
+  - `parted`, `fdisk`, `cfdisk`: ferramentas em modo texto para alterar partições em um dispositivo ou mesmo em um arquivo, da interface mais simples à mais sofisticada.
+  - `Disks`: aplicativo GNOME para editar e visualizar partições.
+  - `gparted`: aplicativo com boa interface gráfica para editar partições.
+  - `losetup`: /dev/loop0...
+- estrutura de arquivos do Linux:
+  - `/bin` link para `/usr/bin`: executáveis do sistema e aplicativos.
+  - `/boot`: onde ficam as imagens do kernel e demais arquivos auxiliares, como as imagens RAM DISK (.rd).
+  - `/dev`: arquivos que dão acesso drivers aos dispositivos de hardware conectados no sistema, é gerenciado pelo aplicativo `udev`
+  - `/etc`: arquivos de configuração globais dos aplicativos e do sistema
+  - `/home`: onde se localizam os diretórios (ou pastas) dos usuários.
+  - `/lib`: link para `/usr/lib`
+  - /lib32 -> usr/lib32
+  - /lib64 -> /usr/lib64
+  - /libx32 -> /usr/libx32
+  - `/media`: ponto de montagem dos dispositivos de armazenamento removíveis.
+  - `/mnt`: ponto de montagem temporário, mais utilizado para manutenção.
+  - `/opt`: diretório utilizado para instalação de aplicativos, onde os componentes ficam armazenados juntos, diferentemente da instalação tradicional, onde os arquivos de um aplicativo ficam distribuídos entre `/etc`, `/usr/bin`, `/usr/lib`, `/usr/share`, `/var`, etc.
+  - `/proc`: ponto de montagem virtual com informações do estado do sistema.
+  - `/run`: ponto de montagem virtual com informações do estado do sistema.
+  - `/sbin` -> /usr/sbin
+  - `/srv`: ponto de montagem virtual com informações do estado do sistema.
+  - `/sys`: ponto de montagem virtual com informações do estado do sistema.
+  - `/tmp`: arquivos temporários do sistema, de aplicativos e de usuários, são apagados dependendo das configurações: em cada boot, a cada período de tempo de inatividade, ou se o processo que o gerou finalizou
+  - `/usr`: principais:
+    - `bin`: executáveis
+    - `include`: arquivos de cabeçalho, libc, glib, etc.
+    - `lib*`: bibliotecas do sistema e dos aplicativos.
+    - `local`: contém os subdiretórios `etc`, `bin`, `lib`, como `usr`, mas para os aplicados gerados e instalados manualmente.
+    - `man`: contém a documentação de aplicativos e funções.
+    - `sbin`: executáveis do sistema, manutenção e de uso privilegiado, superusuário.
+    - `share`: contém dados dos aplicativos.
+    - `src`: contém código fonte de aplicativos, bibliotecas e comumente do kernel.
+  - `/var`:
+    - `cache`: usado para armazenar dados temporários de estado ou de memória.
+    - `log`: contém os arquivos de log do sistema e de aplicativos e serviços
+    - `lock`: contém arquivos de trava e sincronização entre aplicativos.
+
+## Aula 12
+
+### Assuntos da aula
+
+- Python
