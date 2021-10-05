@@ -254,3 +254,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 ### Assuntos da aula
 
 - Python
+
+## Aula 13
+
+A aula consiste em uma atividade que será realizada pelos alunos. O exercício da aula 13 encontra-se na pasta [exerc-1](./exerc-1), ver [README](./exerc-1/README.md).
