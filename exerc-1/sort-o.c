@@ -24,18 +24,20 @@ item_t *create_array(int size);
 void destroy_array(item_t *array, int size);
 
 // Add a new string/key pair on first free place
-void add_element(item_t *array, int key, const char *string);
+void add_element(item_t *array, int size, int key, const char *string);
 
 int main(void)
 {
 	item_t *array;
 	
 	array = create_array(5);
-	add_element(array, 3, "bill");
-	add_element(array, 4, "neil");
-	add_element(array, 2, "john");
-	add_element(array, 5, "rick");
-	add_element(array, 1, "alex");
+	add_element(array, 5, 3, "bill");
+	add_element(array, 5, 4, "neil");
+	add_element(array, 5, 2, "john");
+	add_element(array, 5, 5, "rick");
+	add_element(array, 5, 1, "alex");
+	add_element(array, 5, 6, "vitor");
+	
 	
 	sort(array,5);
 	
@@ -102,13 +104,19 @@ void destroy_array(item_t *array, int size)
 	free(array);
 }
 //------------------------------------------------------------------------------
-void add_element(item_t *array, int key, const char *string)
+void add_element(item_t *array, int size, int key, const char *string)
 {
 	int freePosition = 0;
 	int stringSize = 0;
 	
 	for(;; freePosition++)
 	{
+		if(freePosition >= size)
+		{
+			printf("Could not add new element. Full!\n");
+			return;
+		}
+	
 		if(array[freePosition].data == NULL)
 			break;
 	}
