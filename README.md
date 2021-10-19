@@ -264,6 +264,7 @@ A aula consiste em uma atividade que será realizada pelos alunos. O exercício 
 Análise da atividade da aula anterior.
 
 - **Não reinvente a roda!** Use bibliotecas
-- Sempre dê preferência à bibliotecas padrão: um maior número de programadores a usa, com certeza; já foram extensamente testadas.
+- Sempre dê preferência à bibliotecas padrão: um maior número de programadores a usa, com certeza; já foram extensamente testadas, apresentando uma probabilidade muito menos de possuírem *bugs*.
 - Aprender uma linguagem de programação não se resume à sintaxe e tipos de dados, é essenscial o domínio da biblioteca padrão da linguagem.
 
+Com esses conceitos refaça o exercício 1, mas agora na pasta exerc-2, utilizando a [GLIB](https://docs.gtk.org/glib/index.html).
