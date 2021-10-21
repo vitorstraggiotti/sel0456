@@ -13,7 +13,9 @@ public:
 std::vector<Item> items = {
   {"john", 2},
   {"bill", 3},
-  {"joe", 1}
+  {"joe", 1},
+  {"sara", 5},
+  {"foo", 4}
 };
 
 void print_items(const std::vector<Item>items) {
@@ -27,9 +29,10 @@ bool compareItem(Item& a, Item& b) {
 }
 
 int main(void) {
+  std::cout << "--> Unordered:\n";
   print_items(items);
   std::sort(items.begin(), items.end(), compareItem);
-  std::cout << "Sorting...\n";
+  std::cout << "--> Sorted:\n";
   print_items(items);
 
   return 0;
