@@ -290,6 +290,14 @@ Não se esqueça: utilize a biblioteca padrão C++ [`stdlibc++`](https://gcc.gnu
 
 **Alternativa:** refaça em Python, ou outra linguagem de alto nível.
 
+## Aula 16
+
+### Tema da aula
+
+Crinado interfaces gráficas com Python + [Gtk](https://docs.gtk.org/gtk3/) + [Glade](https://glade.gnome.org/).
+
+O Gtk é a biblioteca base do [GNOME](https://www.gnome.org/) que, a partir da versão 3.39, houve uma alteração na numeração. A versão que deveria ser a 3.40, é a versão 40 e atualmente o GNOME está na versão 41.
+
 
 
 
