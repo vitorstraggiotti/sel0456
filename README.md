@@ -298,6 +298,8 @@ Crinado interfaces gráficas com Python + [Gtk](https://docs.gtk.org/gtk3/) + [G
 
 O Gtk é a biblioteca base do [GNOME](https://www.gnome.org/) que, a partir da versão 3.39, houve uma alteração na numeração. A versão que deveria ser a 3.40, é a versão 40 e atualmente o GNOME está na versão 41.
 
+### Atividade
 
+Construa um aplicativo que calcule a seção de um fio com base na corrente eficaz que o atravessa. O usuário entra com um valor de corrente e o comprimeto e ele devolve a seção do fio e o fusível indicado. Use também um máximo de queda de tensão de 2,5%.
 
 
