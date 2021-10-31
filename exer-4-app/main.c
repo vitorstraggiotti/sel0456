@@ -10,9 +10,12 @@
 #include <stdio.h>
 
 #include <gtk/gtk.h>
- 
+
+//Callback functions
 void button_calcular(GtkWidget *widget, gpointer data);
 void destroy(GtkWidget *widget, gpointer data);
+//Helper functions
+float choose_fuse(float Current);
 
 //Resistivity of materials at 20°C [ohm.meter]
 const float RhoCopper		= 1.68e-8;
@@ -65,7 +68,7 @@ void button_calcular(GtkWidget *widget, gpointer data)
 	char WireSection[80];
 	char Fuse[80];
 	float WireCurrent, WireLength, WireVoltage;
-	float CrossSection, Rho;
+	float CrossSection, FuseValue, Rho;
 	
 	GtkWidget *CurrentEntry = GTK_WIDGET(gtk_builder_get_object(Builder, "input_current"));
 	GtkWidget *LengthEntry = GTK_WIDGET(gtk_builder_get_object(Builder, "input_length"));
@@ -101,20 +104,37 @@ void button_calcular(GtkWidget *widget, gpointer data)
 	
 	//Calculate parameters
 	CrossSection = (Rho * WireLength * WireCurrent * 1.0e6) / ((VoltageDrop / 100.0) * WireVoltage);
-	sprintf(WireSection, "%f", CrossSection);
-	sprintf(Fuse, "teste2");
+	sprintf(WireSection, "%.2f", CrossSection);
+	
+	FuseValue = choose_fuse(WireCurrent);
+	if(FuseValue != 0)
+		sprintf(Fuse, "%.2f", FuseValue);
+	else
+		sprintf(Fuse, "Sem valor comercial");
 	
 	//Print results
 	gtk_label_set_text(GTK_LABEL(LabelWireSection), (const gchar *) WireSection);
 	gtk_label_set_text(GTK_LABEL(LabelFuse), (const gchar *) Fuse);
 	printf("Current: %f\n", WireCurrent);
 	printf("Length: %f\n", WireLength);
-	printf("Voltage: %f\n", WireVoltage);
+	printf("Voltage: %f\n\n", WireVoltage);
 }
 //==================== HELPER FUNCTIONS ========================================
+//Return the commercial value fuse for a given current. Return 0 if not found
 float choose_fuse(float Current)
 {
-	float CommercialValues[] = {}
+	float CommercialValues[] = {0.1, 0.125, 0.15, 0.2, 0.25, 0.3, 0.315, 0.35,
+									0.4, 0.5, 0.8, 1.0, 1.25, 1.5, 1.6, 2.0, 2.5,
+									3.0, 3.15, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0,
+									10.0, 15.0, 20.0, 25.0, 30.0, 40.0, 50.0, 0.0};
+	
+	for(int i = 0; CommercialValues[i] != 0.0; i++)
+	{
+		if(Current < CommercialValues[i])
+			return CommercialValues[i];
+	}
+	
+	return 0;
 }
 
 
