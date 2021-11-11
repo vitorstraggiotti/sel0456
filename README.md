@@ -302,4 +302,12 @@ O Gtk é a biblioteca base do [GNOME](https://www.gnome.org/) que, a partir da v
 
 Construa um aplicativo que calcule a seção de um fio com base na corrente eficaz que o atravessa. O usuário entra com um valor de corrente e o comprimeto e ele devolve a seção do fio e o fusível indicado. Use também um máximo de queda de tensão de 2,5%.
 
+## Aula 17
+
+### Tema da aula: Yocto
+
+# Aula 18
+
+### Tema da aula: Yocto
+
 
