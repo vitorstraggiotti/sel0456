@@ -306,7 +306,7 @@ Construa um aplicativo que calcule a seção de um fio com base na corrente efic
 
 ### Tema da aula: Yocto
 
-# Aula 18
+## Aula 18
 
 ### Tema da aula: Yocto
 
