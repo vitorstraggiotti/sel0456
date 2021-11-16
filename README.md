@@ -310,4 +310,7 @@ Construa um aplicativo que calcule a seção de um fio com base na corrente efic
 
 ### Tema da aula: Yocto
 
+Veja as atividades propostas para o Yocto ([LAB](yocto/lab/README.md)), tente realizá-las como exercício para entender como funciona a criação de imagens para um SO mínimo.
+
+É bem interessante consultar a [documentação do Yocto](https://docs.yoctoproject.org/brief-yoctoprojectqs/index.html).
 
