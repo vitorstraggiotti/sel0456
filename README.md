@@ -314,3 +314,31 @@ Veja as atividades propostas para o Yocto ([LAB](yocto/lab/README.md)), tente re
 
 É bem interessante consultar a [documentação do Yocto](https://docs.yoctoproject.org/brief-yoctoprojectqs/index.html).
 
+## Aula 19
+
+### Tema da aula
+
+Utilizando a interface gráfica `toaster` do Yocto:
+
+Supondo que o diretório que você baixou o yocto seja: `~/yocto`, digite a sequência de comandos abaixo para ativar o `toaster`:
+
+```bash
+~/yocto$ virtualenv venv # se não tiver o virtualenv instalado: sudo apt install python3-virtualenv
+~/yocto$ source venv/bin/activate
+~/yocto$ pip install -r bitbake/toaster-requirements.txt
+~/yocto$ source oe-init-build-env
+~/yocto/build$ source toaster start
+~/yocto/build$ ../bitbake/lib/toaster/manage.py createsuperuser
+```
+
+Isso deve iniciar o servidor HTTP no localhost, então abra a página `localhost:8000` em seu navegador.
+
+Para parar o processo `toaster`, use:
+
+```bash
+~/yocto/build$ source toaster stop
+```
+
+ Os comandos acima (virtualenv, pip, manage.py) devem ser utilizados apenas uma vez, não é necessário utilizar todas as vezes que quiser rodar o `toaster`, exceto pelo comando `venv/bin/activate`, pois o ambiente virtual deve ser ativado, caso não esteja, para que os pacotes Python baixados pelo `pip` fiquem disponíveis. Para isso, basta iniciar o servidor com o `source toaster start` e parar sua execução com o `source toaster stop`.
+ 
+![Screenshot from 2021-11-16 18-34-56](https://user-images.githubusercontent.com/11684801/142069608-e60688e3-7cf6-4f45-8945-7767ee3059bc.png)
