@@ -267,6 +267,8 @@ A aula consiste em uma atividade que será realizada pelos alunos. O exercício 
 - Sempre dê preferência às bibliotecas padrão: um maior número de programadores a usa, com certeza, conferindo maior legibilidade e portabilidade ao seu código; já foram extensamente testadas, apresentando uma probabilidade muito menor de possuírem *bugs*.
 - Dominar uma linguagem de programação não se resume à sintaxe e tipos de dados, é essencial saber utilizar a biblioteca padrão da linguagem.
 
+> **Atenção:** *Header files* não são bibliotecas, as bibliotecas são adicionadas na etapa de lincagem (*linker*), e os módulos da biblioteca só serão acrescentados ao executável final caso esses utilizem as funções desses módulos em específico, não apenas pela diretriz #include <arquivo de cabeçalho>. **Biblioteca não é igual a arquivo de cabeçalho!**
+
 Com esses conceitos em mente, refaça o exercício 1 (mas agora na pasta [exerc-2](./exerc-2)), utilizando a [GLIB](https://docs.gtk.org/glib/index.html). Essa pasta contém um código exemplo em [sort.c](./exerc-2/sort.c).
 
 ## Aula 15
@@ -339,6 +341,15 @@ Para parar o processo `toaster`, use:
 ~/yocto/build$ source toaster stop
 ```
 
- Os comandos acima (virtualenv, pip, manage.py) devem ser utilizados apenas uma vez, não é necessário utilizar todas as vezes que quiser rodar o `toaster`, exceto pelo comando `venv/bin/activate`, pois o ambiente virtual deve ser ativado, caso não esteja, para que os pacotes Python baixados pelo `pip` fiquem disponíveis. Para isso, basta iniciar o servidor com o `source toaster start` e parar sua execução com o `source toaster stop`.
+ Os comandos acima (virtualenv, pip, manage.py) devem ser utilizados apenas uma vez, não é necessário utilizar todas as vezes que quiser rodar o `toaster`, exceto pelo comando `venv/bin/activate`, pois o ambiente virtual deve ser ativado, caso não esteja, para que os pacotes Python baixados pelo `pip` fiquem disponíveis. Para isso, basta iniciar o servidor com:
+ 
+ ```bash
+ ~/yocto/build$ source toaster start
+ ```
+ e parar sua execução com:
+ 
+ ```bash
+ ~/yocto/build$ source toaster stop
+ ```
  
 ![Screenshot from 2021-11-16 18-34-56](https://user-images.githubusercontent.com/11684801/142069608-e60688e3-7cf6-4f45-8945-7767ee3059bc.png)
