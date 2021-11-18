@@ -353,3 +353,10 @@ Para parar o processo `toaster`, use:
  ```
  
 ![Screenshot from 2021-11-16 18-34-56](https://user-images.githubusercontent.com/11684801/142069608-e60688e3-7cf6-4f45-8945-7767ee3059bc.png)
+
+## Aula 20
+
+### Assunto da aula
+
+Retomando a atividade de construção de interface gráfica com Gtk+Glade+Python: mais *widgets*.
+
