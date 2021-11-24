@@ -300,6 +300,15 @@ Crinado interfaces gráficas com Python + [Gtk](https://docs.gtk.org/gtk3/) + [G
 
 O Gtk é a biblioteca base do [GNOME](https://www.gnome.org/) que, a partir da versão 3.39, houve uma alteração na numeração. A versão que deveria ser a 3.40, é a versão 40 e atualmente o GNOME está na versão 41.
 
+Primeiros *widgets*:
+
+1. GtkButton
+2. GtkEntry
+3. GtkCheckButton
+4. GtkLabel
+
+Acessando os *widgets* através de seu Id com o método `get_object()` em Python. Atribuindo sinais aos *widgets*.
+
 ### Atividade
 
 Construa um aplicativo que calcule a seção de um fio com base na corrente eficaz que o atravessa. O usuário entra com um valor de corrente e o comprimeto e ele devolve a seção do fio e o fusível indicado. Use também um máximo de queda de tensão de 2,5%. Realize essa atividade na pasta `exerc-3`.
@@ -358,5 +367,17 @@ Para parar o processo `toaster`, use:
 
 ### Assunto da aula
 
-Retomando a atividade de construção de interface gráfica com Gtk+Glade+Python: mais *widgets*.
+Retomando a atividade de construção de interface gráfica com Gtk+Glade+Python: mais *widgets*:
+
+1. GtkSpinButton
+2. GtkAdjustment
+3. Janelas de diálogos pré-formatadas como o `GtkFileChooserDialog`, duas formas de ser utilizado: criando pela interface Glade ou construindo diretamente no código.
+
+## Aula 21
+
+Utilizando `GtkMenuBar`e `GtkMenuItem`, aceleradores, sinais e botões de estoque.
+
+Atividade: propor um aplicativo com interface gráfica e implementá-lo na linguagem de sua preferência. Faça o desenvolvimento na pasta `exerc-5`.
+
+
 
