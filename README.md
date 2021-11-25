@@ -377,7 +377,13 @@ Retomando a atividade de construção de interface gráfica com Gtk+Glade+Python
 
 Utilizando `GtkMenuBar`e `GtkMenuItem`, aceleradores, sinais e botões de estoque.
 
-Atividade: propor um aplicativo com interface gráfica e implementá-lo na linguagem de sua preferência. Faça o desenvolvimento na pasta `exerc-5`.
+Atividade: propor um aplicativo com interface gráfica e implementá-lo na linguagem de sua preferência. Faça o desenvolvimento na pasta `exerc-5**.
+
+## Aula 22
+
+### Assuntos da Aula
+
+**Flask Web Server**
 
 
 
