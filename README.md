@@ -424,6 +424,7 @@ Version=94
 Type=Application
 Name=Firefox
 Exec=/home/user/firefox/firefox
+Path=/home/user/firefox/
 Terminal=false
 StartupNotify=true
 Categories=Application;Network;
@@ -431,3 +432,24 @@ Icon=/home/user/firefox/browser/chrome/icons/default/default128.png
 ```
 
 O lançador ficará disponível no *Window Manager*.
+
+> Notem que as variáveis `Exec`, `Path` e `Icon` não tem aspas. A variável `Path` se refere ao diretório de trabalho do aplicativo.
+
+Um lançador para o aplicativo Python+Gtk visto na aula 20, pode ser escrito abaixo:
+
+```ini
+[Desktop Entry]
+Type=Application
+Name=Aplicativo GTK+PYTHON+GLADE
+GenericName=Arduino GTK
+Comment=Open-source test Glade app
+Exec=/home/user/sel0456/aula_20/main.py
+Path=/home/user/sel0456/aula_20
+Icon=/usr/share/icons/spyder.png
+Terminal=false
+Categories=Development;IDE;Electronics;
+MimeType=text/x-arduino;
+Keywords=embedded electronics;electronics;avr;microcontroller;
+StartupWMClass=processing-app-Base
+```
+> Considerando que você clonou o repositório sel0456 no seu "home" e lembre de trocar o `user` pelo seu nome de usuário.
