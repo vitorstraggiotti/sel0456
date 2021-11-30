@@ -311,7 +311,7 @@ Acessando os *widgets* através de seu Id com o método `get_object()` em Python
 
 ### Atividade
 
-Construa um aplicativo que calcule a seção de um fio com base na corrente eficaz que o atravessa. O usuário entra com um valor de corrente e o comprimeto e ele devolve a seção do fio e o fusível indicado. Use também um máximo de queda de tensão de 2,5%. Realize essa atividade na pasta `exerc-3`.
+Construa um aplicativo que calcule a seção de um fio com base na corrente eficaz que o atravessa. O usuário entra com um valor de corrente e o comprimeto e ele devolve a seção do fio e o fusível indicado. Use também um máximo de queda de tensão de 2,5%. Realize essa atividade na pasta `exerc-4`.
 
 ## Aula 17
 
@@ -377,7 +377,7 @@ Retomando a atividade de construção de interface gráfica com Gtk+Glade+Python
 
 Utilizando `GtkMenuBar`e `GtkMenuItem`, aceleradores, sinais e botões de estoque.
 
-Atividade: propor um aplicativo com interface gráfica e implementá-lo na linguagem de sua preferência. Faça o desenvolvimento na pasta `exerc-5**.
+Atividade: propor um aplicativo com interface gráfica e implementá-lo na linguagem de sua preferência. Faça o desenvolvimento na pasta `exerc-5`.
 
 ## Aula 22
 
@@ -385,5 +385,28 @@ Atividade: propor um aplicativo com interface gráfica e implementá-lo na lingu
 
 **Flask Web Server**
 
+## Aula 23
 
+### Assuntos da Aula
+
+- `app3.py`: enviando dados para o banco de dados;
+- arquivo de configuração simples modo texto;
+- configurando o *web server* para iniciar com o `systemd`
+
+### Exemplo de arquivo `systemd` com processo com privilégio de usuário
+
+```systemd
+[Unit]
+Description=Trator Web Data Acquisition
+
+[Service]
+User=user
+Group=user
+WorkingDirectory=/home/user/flask-app
+ExecStart=/home/user/flask-app/venv/bin/python /home/user/flask-app/flask_app.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
 
