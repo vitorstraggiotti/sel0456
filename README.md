@@ -395,9 +395,11 @@ Atividade: propor um aplicativo com interface gráfica e implementá-lo na lingu
 
 ### Exemplo de arquivo `systemd` com processo com privilégio de usuário
 
+
 ```systemd
 [Unit]
 Description=Web Data Acquisition
+After=network.target
 
 [Service]
 User=user
@@ -410,3 +412,22 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
+Colocar o arquivo acima no diretório `/etc/systemd/system/`, por exemplo sob o nome de `flask-app.service`.
+
+### Exemplo de lançador para o Desktop
+
+Por exemplo, você pode baixar o firefox (do site oficial da Mozila) e descompactá-lo no diretório `/home/user/firefox/` e então, no diretório `/home/user/.local/share/applications`, criar o arquivo `firefox.desktop`, com o seguinte conteúdo:
+
+```ini
+[Desktop Entry]
+Version=94
+Type=Application
+Name=Firefox
+Exec=/home/user/firefox/firefox
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+Icon=/home/user/firefox/browser/chrome/icons/default/default128.png
+```
+
+O lançador ficará disponível no *Window Manager*.
