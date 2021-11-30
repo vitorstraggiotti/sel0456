@@ -397,7 +397,7 @@ Atividade: propor um aplicativo com interface gráfica e implementá-lo na lingu
 
 ```systemd
 [Unit]
-Description=Trator Web Data Acquisition
+Description=Web Data Acquisition
 
 [Service]
 User=user
