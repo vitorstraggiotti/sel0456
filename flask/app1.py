@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
 Created on Mon May 31 13:59:55 2021
@@ -48,5 +48,5 @@ def main(s):
 def posts():
     return render_template('devices_old.html', devices=devices_all)
 
-#if __name__ == '__main__':
-#    app.run('0.0.0.0', 5000, debug=True)
+if __name__ == '__main__':
+    app.run('0.0.0.0', 5000, debug=True)
