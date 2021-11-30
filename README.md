@@ -396,7 +396,7 @@ Atividade: propor um aplicativo com interface gráfica e implementá-lo na lingu
 ### Exemplo de arquivo `systemd` com processo com privilégio de usuário
 
 
-```systemd
+```ini
 [Unit]
 Description=Web Data Acquisition
 After=network.target
