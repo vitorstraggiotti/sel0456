@@ -105,7 +105,6 @@ void button_ok_file_choose(GtkWidget *widget, gpointer data)
 	gtk_widget_hide(DialogFileChoose);
 	InFilePath = gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(DialogFileChoose));
 	gtk_label_set_text(GTK_LABEL(LabelFilePathPrint), InFilePath);
-	printf("PATH:%s\n", InFilePath);
 }
 
 void button_start_crypt(GtkWidget *widget, gpointer data)
@@ -116,7 +115,6 @@ void button_start_crypt(GtkWidget *widget, gpointer data)
 	
 	// Get password and password length
 	Password = gtk_entry_get_text(GTK_ENTRY(EntryPassword));
-	printf("Password:%s\n", Password);
 	PasswordLength = 0;
 	for(uint8_t i = 0;; i++)
 	{
@@ -124,8 +122,6 @@ void button_start_crypt(GtkWidget *widget, gpointer data)
 			break;
 		PasswordLength++;
 	}
-	
-	printf("passlength: %u\n", PasswordLength);
 	
 	// Check for valid inputs
 	if(InFilePath == NULL)
@@ -407,11 +403,11 @@ static uint8_t *get_password(uint32_t *PassLength)
 // Rounds --> number of chacha rounds to generate cipher stream
 void cryptcha(uint32_t Rounds)
 {
-	uint64_t	InFileSizeByte;			//Input filesize in bytes
+	uint64_t	InFileSizeByte = 0;			//Input filesize in bytes
 	uint8_t		*Key = NULL;			//32 byte key for chacha20 cipher
 	uint8_t		Cipher[CIPHER_LENGTH];	//64 byte chacha20 block to be XOR'ed with data
 	
-	uint64_t	Nonce = 0;				//12 byte "number used once" for chacha20
+	uint64_t	Nonce = 0;				//8 byte "number used once" for chacha20
 	uint64_t	BlockCounter = 0;		//8 byte block counter for chacha20 cipher
 	
 	uint8_t 	InDataBlock[DATA_BLOCK_SIZE];	//Data block from file to be encrypted
@@ -441,7 +437,7 @@ void cryptcha(uint32_t Rounds)
 	free(OutputFilename);	
 
 	//Allocating and initialising cryptographic variables ----------------------
-	Key = sha256_data(Password, (uint64_t)PasswordLength, SHA256_NOT_VERBOSE);
+	Key = sha256_data(Password, (uint64_t)PasswordLength, NOT_VERBOSE);
 
 	for(uint8_t i = 0; i <= 24; i += 8)
 	{
