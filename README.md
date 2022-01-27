@@ -63,12 +63,12 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
   Existem muitos guias e tutoriais para o `Emacs` disponíveis na rede. O site oficial é: https://www.gnu.org/savannah-checkouts/gnu/emacs/emacs.html.
   
   Em português: no [IME](https://www.ime.usp.br/~rbrito/texts/emacs.html), [EmacsWiki](https://www.emacswiki.org/emacs/NovatoNoEmacs) e [MIT](http://web.mit.edu/Emacs/source/emacs-23.1/etc/tutorials/TUTORIAL.pt_BR).
-  
-  > Ainda, se você quiser usar várias configurações já prontas, pode utilizar o arquivo [.spacemacs](.spacemacs). Essas configurações incluem o uso do LSP (language server protocol), que é uma ferramentas muito útil na edição de programas (veja a [página do LSP](https:)) As  C-v para paste, C-z para undo. No entanto, C-x abre um menu e não faz cut, nem o C-c, que também abre um menu de opções. Para cut, utilize <S-delete> (Shift+Del) ou C-w, para copy, utilize <C-insert> ou M-w. É necessário colocar o arquivo **.spacemacs** no seu diretório HOME (${HOME}).
-  
+
 #### Editando programas em C
 
-Um modo que ajuda muito para programação em C, ou mesmo C++, é através do commando: `M-x semantic-mode` e o `M-x auto-complete-mode`.
+Se você quiser usar várias configurações já prontas, *recomenda-se muito* utilizar o arquivo [.spacemacs](.spacemacs)com várias configurações prontas, incluindo C-v (Control + v) para paste, C-z para undo. No entanto, C-x abre um menu e não faz cut, nem o C-c, que também abre um menu de opções. Para cut, utilize <S-delete> (Shift+Del) ou C-w, para copy, utilize <S-insert> ou M-w. 
+  
+> Caso você não utilize o **.spacemacs** acima, ou o LSP, um modo que ajuda muito para programação em C, ou mesmo C++, é através do commando: `M-x semantic-mode` e o `M-x auto-complete-mode`. Lembrando que eles são ativados automaticamente com o LSP mode.
   
 ## Aula 3
 
