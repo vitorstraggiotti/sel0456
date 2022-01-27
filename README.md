@@ -64,9 +64,9 @@ Para instalar o Spacemacs, você pode seguir os passos indicados na web page ant
   
   Em português: no [IME](https://www.ime.usp.br/~rbrito/texts/emacs.html), [EmacsWiki](https://www.emacswiki.org/emacs/NovatoNoEmacs) e [MIT](http://web.mit.edu/Emacs/source/emacs-23.1/etc/tutorials/TUTORIAL.pt_BR).
 
-#### Editando programas em C
+#### Editando programas com o Language Server Protocol (LSP)
 
-Se você quiser usar várias configurações já prontas, *recomenda-se muito* utilizar o arquivo [.spacemacs](.spacemacs)com várias configurações prontas, incluindo C-v (Control + v) para paste, C-z para undo. No entanto, C-x abre um menu e não faz cut, nem o C-c, que também abre um menu de opções. Para cut, utilize <S-delete> (Shift+Del) ou C-w, para copy, utilize <S-insert> ou M-w. 
+Se você quiser usar várias configurações já prontas, *recomenda-se muito* utilizar o arquivo [.spacemacs](.spacemacs) com várias configurações prontas, incluindo C-v (Control + v) para paste, C-z para undo. No entanto, C-x abre um menu e não faz cut, nem o C-c, que também abre um menu de opções. Para cut, utilize \<S-delete\> (Shift+Del) ou C-w, para copy, utilize \<S-insert\> ou M-w. 
   
 > Caso você não utilize o **.spacemacs** acima, ou o LSP, um modo que ajuda muito para programação em C, ou mesmo C++, é através do commando: `M-x semantic-mode` e o `M-x auto-complete-mode`. Lembrando que eles são ativados automaticamente com o LSP mode.
   
